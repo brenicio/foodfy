@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 
 
@@ -13,16 +12,23 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+div.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+}
+
+/**HEADER**/
 
 header {
-padding: 30px;
-margin: 0px 231px 30px 231px;
-position: relative;
+    padding: 36.1px 0 30px 0;
+    justify-self: stretch;
 }
 
 header div.links {
-    position: absolute;
-    left: 0px;
+    text-align: center;
+    margin: 0 557.4px 0 0;
 }
 
 header div.links a.page {
@@ -37,12 +43,12 @@ header div.links a img {
     margin: 0px 122.4px 0px 0px;
 }
 
-/***CONTENT***/
+/***MAIN CONTENT***/
 
 main div.content {
     margin: 0px 231px 0px 231px;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto;
 }
 
 main div.content div.title {
@@ -89,5 +95,38 @@ main div.mostViewed h1 {
     font-weight: bold;
     font-size: 24px;
     color: #111111;
+    padding-bottom: 20px;
+}
+
+main div.mostViewed div.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+main div.mostViewed div.card_image img {
+    border-radius: 15px;
+    border-radius: 15px;
+    max-width: 300px;
+    max-height: 140px;
+}
+
+main div.mostViewed .card_title {
+    padding-top: 15.56px;  
+    padding-bottom: 1.56px;  
+}
+
+main div.mostViewed .card_title span{
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color:  #111111;
+    max-width: 156px;
+    max-height: 21px;
+}
+
+main div.mostViewed .card_autor span{
+    font-size: 14px;
+    color:  #777777;
 }
 
