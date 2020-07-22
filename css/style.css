@@ -45,6 +45,10 @@ header div.links a img {
 
 /***MAIN CONTENT***/
 
+main {
+    margin-bottom: 50px;
+}
+
 main div.content {
     margin: 0px 231px 0px 231px;
     display: grid;
@@ -129,4 +133,24 @@ main div.mostViewed .card_autor span{
     font-size: 14px;
     color:  #777777;
 }
+
+/*** FOOTER ***/
+footer {
+    background: #EEEEEE;
+    height: 62px;
+    width: 100%;
+    text-align: center;
+}
+
+footer .copyright {
+    margin-top: 23px;
+}
+
+footer .copyright span {
+    font-size: 14px;
+    color: #999999;
+    max-width: 267px;
+}
+
+/**ABOUT PAGE**/
 
