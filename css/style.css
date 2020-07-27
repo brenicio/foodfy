@@ -121,7 +121,6 @@ main div.mostViewed .card_title {
 }
 
 main div.mostViewed .card_title span{
-    font-family: 'Roboto-Regular', sans-serif;
     font-size: 18px;
     font-weight: bold;
     color:  #111111;
@@ -154,3 +153,31 @@ footer .copyright span {
 
 /**ABOUT PAGE**/
 
+header div.links.aboutLinks a.page.about {
+    font-weight: bold;
+}
+
+main div.content div.titleText span {
+    height: 28px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #111111;
+    padding-bottom: 20px;
+}
+
+main div.content div.titleText {
+    height: 24px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #111111;
+    padding-bottom: 20px;
+}
+
+main div.content p {
+    max-width: 940px;
+    height: 280px;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+}
