@@ -8,14 +8,17 @@
     padding: 0;
 }
 
-body {
+html, body {
     font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 100%;
 }
 
 div.wrapper {
+    min-height: 100%;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr auto;
     justify-items: center;
 }
 
@@ -137,20 +140,18 @@ main div.mostViewed .card_autor span{
 
 /*** FOOTER ***/
 footer {
+    display: grid;
     background: #EEEEEE;
+    justify-self: stretch;
+    justify-items: center;
+    align-items: center;
     height: 62px;
-    width: 100%;
-    text-align: center;
-}
-
-footer .copyright {
-    margin-top: 23px;
+    
 }
 
 footer .copyright span {
     font-size: 14px;
     color: #999999;
-    max-width: 267px;
 }
 
 /**ABOUT PAGE**/
@@ -192,3 +193,5 @@ main div.content p {
 main div.content div.text p {
     text-align: justify;
 }
+
+/**REVENUE PAGE**/
