@@ -30,10 +30,11 @@ header {
 }
 
 header div.links {
-    margin: 0px 29.8% 0 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    margin-left: 25.3%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row: auto;
+    justify-content: start;
 }
 
 header div.links a.page {
@@ -107,33 +108,32 @@ main div.mostViewed h1 {
     padding-bottom: 20px;
 }
 
-main div.mostViewed div.cards {
+main .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    column-gap: 20px;
+    row-gap: 30px;
 }
 
-main div.mostViewed div.card_image img {
-    border-radius: 15px;
+main .card_image img {
     border-radius: 15px;
     max-width: 300px;
     max-height: 140px;
 }
 
-main div.mostViewed .card_title {
+main .card_title {
     padding-top: 15.56px;  
     padding-bottom: 1.56px;  
 }
 
-main div.mostViewed .card_title span{
+main .card_title span{
     font-size: 18px;
-    font-weight: bold;
     color:  #111111;
     max-width: 156px;
     max-height: 21px;
 }
 
-main div.mostViewed .card_autor span{
+main .card_autor span{
     font-size: 14px;
     color:  #777777;
 }
@@ -151,18 +151,21 @@ footer {
 
 footer .copyright span {
     font-size: 14px;
-    color: #999999;
+    color: #999999;    
+
+}
+
+/**BOLD TEXT**/
+
+.bold {
+    font-weight: bold;
 }
 
 /**ABOUT PAGE**/
 
-header.about {
+header.page {
     padding: 36.1px 0 50px 0;
     justify-self: stretch;
-}
-
-header div.links.aboutLinks a.page.bold {
-    font-weight: bold;
 }
 
 main div.content div.titleText span {
@@ -195,3 +198,4 @@ main div.content div.text p {
 }
 
 /**REVENUE PAGE**/
+
