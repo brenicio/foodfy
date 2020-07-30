@@ -197,5 +197,72 @@ main div.content div.text p {
     text-align: justify;
 }
 
-/**REVENUE PAGE**/
+/**REVENUE PAGE (MODAL)**/
 
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    margin: 25vh auto;
+    width: 660px;
+    height: 413px;
+    border-radius: 16px;
+    position: relative;
+}
+
+.modal-content {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    text-align: center;
+}
+
+.modal-content .content-image img {
+    border-radius: 15px;
+    width: 600px;
+    height: 200px;    
+}
+
+.modal-content .content-title {
+    margin-top: 16px;
+}
+
+.modal-content .content-title span {
+    font-size: 24px;
+    color: #111111;
+}
+
+.modal-content .content-autor {
+    margin-top: 5px;
+}
+
+.modal-content .content-autor span {
+    font-size: 18px;
+    color: #777777;
+}
+
+.close-modal {    
+    position: absolute;
+    left: 42%;
+    bottom: 30px;
+    cursor: pointer;
+}
+
+.close-modal span {
+    font-size: 16px;
+    color: #999999;
+}
+
+/*==MODAL.ACTIVE==*/
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
