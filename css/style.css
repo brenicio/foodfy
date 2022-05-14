@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 
+:root {
+    --color-title: #111111;
+    --color-subtitles: #777777;
+    --color-text-content: #444444;
+    --color-backgroung-title: #FBDFDB;
+    --color-text-title: #000000;
+    --color-background-footer: #EEEEEE;
+    --color-text-footer: #999999;
+    --color-about-text: #444444;
+}
 
 * {
     margin: 0;
@@ -22,6 +32,11 @@ div.wrapper {
     justify-items: center;
 }
 
+main div.content p {    
+    font-size: 18px;    
+    line-height: 28px;
+}
+
 /**HEADER**/
 
 header {
@@ -39,7 +54,7 @@ header div.links {
 
 header div.links a.page {
     margin-right: 30px;
-    color: #111111;
+    color: var(--color-title);
     font-size: 16px;
     line-height: 19px;
     text-decoration: none;
@@ -61,8 +76,13 @@ main div.content {
     grid-template-rows: auto;
 }
 
+main div.content#index-content p{
+    color: var(--color-text-title)
+
+}
+
 main div.content div.title {
-    background: #FBDFDB;
+    background: var(--color-backgroung-title);
     border-radius: 30px;
     border-radius: 30px;
     width: 940px;
@@ -78,7 +98,7 @@ main div.title {
 main div.title h1 {
     font-weight: bolder;
     font-size: 32px;
-    color: #111111;
+    color: var(--color-title);
 }
 
 main div.title div.description {
@@ -94,7 +114,7 @@ main div.title div.image {
 main div.title p {
     opacity: 0.7;
     font-size: 18px;
-    color: #000000;
+    color: var(--color-text-title);
     line-height: 28px;
     max-width: 316px;
     max-height: 84px;
@@ -104,7 +124,7 @@ main div.title p {
 main div.mostViewed h1 {
     font-weight: bold;
     font-size: 24px;
-    color: #111111;
+    color: var(--color-title);
     padding-bottom: 20px;
 }
 
@@ -128,20 +148,20 @@ main .card_title {
 
 main .card_title span{
     font-size: 18px;
-    color:  #111111;
+    color:  var(--color-title);
     max-width: 156px;
     max-height: 21px;
 }
 
 main .card_autor span{
     font-size: 14px;
-    color:  #777777;
+    color:  var(--color-subtitles);
 }
 
 /*** FOOTER ***/
 footer {
     display: grid;
-    background: #EEEEEE;
+    background: var(--color-background-footer);
     justify-self: stretch;
     justify-items: center;
     align-items: center;
@@ -151,7 +171,7 @@ footer {
 
 footer .copyright span {
     font-size: 14px;
-    color: #999999;    
+    color: var(--color-text-footer);    
 
 }
 
@@ -172,7 +192,7 @@ main div.content div.titleText span {
     height: 28px;
     font-weight: bold;
     font-size: 24px;
-    color: #111111;
+    color: var(--color-title);
     padding-bottom: 20px;
 }
 
@@ -181,20 +201,18 @@ main div.content div.titleText {
     font-weight: bold;
     font-size: 20px;
     line-height: 24px;
-    color: #111111;
+    color: var(--color-title);
     padding-bottom: 20px;
-}
-
-main div.content p {
-    max-width: 940px;
-    height: 280px;
-    font-size: 18px;
-    color: #444444;
-    line-height: 28px;
 }
 
 main div.content div.text p {
     text-align: justify;
+}
+
+main div.content#about-content p{
+    max-width: 940px;
+    height: 280px;
+    color: var(--color-about-text);
 }
 
 /**REVENUE PAGE (MODAL)**/
@@ -237,7 +255,7 @@ main div.content div.text p {
 
 .modal-content .content-title span {
     font-size: 24px;
-    color: #111111;
+    color: var(--color-title);
 }
 
 .modal-content .content-autor {
@@ -258,7 +276,7 @@ main div.content div.text p {
 
 .close-modal span {
     font-size: 16px;
-    color: #999999;
+    color: var(--color-text-title);
 }
 
 /*==MODAL.ACTIVE==*/
